@@ -15,9 +15,6 @@ collections:
     create: true
     slug: "{{slug}}"
     extension: "html"
-    format: "frontmatter"
-    frontmatter_delimiter: "---"
     summary: "{{filename}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "text"}
