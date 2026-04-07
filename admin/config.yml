@@ -3,7 +3,7 @@ backend:
   repo: inspireambitions/sauditravelandleisure.com
   branch: main
   auth_type: pkce
-  app_id: sauditravelandleisure-cms
+  app_id: Ov23liJAECWxtJ9KEkWD
 
 media_folder: "images"
 public_folder: "/images"
@@ -17,6 +17,5 @@ collections:
     extension: "html"
     format: "raw"
     summary: "{{filename}}"
-    filter: {field: "filename", pattern: "^(?!admin|about|contact|404|index|page|sitemap|robots)"}
     fields:
       - {label: "Body", name: "body", widget: "code", default_language: "html"}
