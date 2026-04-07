@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: inspireambitions/sauditravelandleisure.com
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "/"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    extension: "html"
+    format: "raw"
+    summary: "{{filename}}"
+    fields:
+      - {label: "Body", name: "body", widget: "code", default_language: "html"}
